@@ -3,8 +3,9 @@ from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filte
 import logging
 import httpx
 import asyncio
+import os
 
-BOT_TOKEN = "7150910133:AAHwRMS7PnD4FO_ijpIcn5M2g-Xyw3iO0l4"  # ❗ استبدله بالتوكن الحقيقي
+BOT_TOKEN = os.environ.get("BOT_TOKEN")  # يستخدم السر المخفي
 CHANNEL_ID = "@ghujbd"  # ❗ ضع يوزر/ID القناة هنا
 
 logging.basicConfig(
